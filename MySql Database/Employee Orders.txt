@@ -1,0 +1,21 @@
+create table employee(
+	employeeID INT not null primary key unique auto_increment,
+    employeeName VARCHAR(50) not null,
+    employeeEmail VARCHAR(50) not null unique,
+    employeePhone varCHAR(10) not null unique,
+    employeePassword varChar(200) not null
+);
+
+Insert into employee(employeeID, employeeName, employeeEmail, employeePhone, employeePassword)
+values('1947', 'Saurabh', 'singh.bisht750@gmail.com', '7508000077', '123456kd');
+
+Insert into employee(employeeName, employeeEmail, employeePhone, employeePassword)
+values('Kuldeep', 'kullu@gmail.com', '9988', '123456kd');
+
+select * from employee;
+
+alter table employee add column sellerOF varchar(50);
+
+update employee set sellerOF = 'Beverages' where employeeID = '1949';
+
+delete from employee where employeeID = 1948;

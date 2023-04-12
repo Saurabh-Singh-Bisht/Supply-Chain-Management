@@ -1,0 +1,44 @@
+use supplychainmanagement
+
+CREATE TABLE `supplychainmanagement`.`orders` (
+  `orderID` INT NOT NULL AUTO_INCREMENT,
+  `productID` VARCHAR(16) NOT NULL,
+  `custID` INT NOT NULL,
+  `productCategory` VARCHAR(100) NOT NULL,
+  `brandName` VARCHAR(100) NOT NULL,
+  `quantity` INT NOT NULL,
+  `totalAmount` DOUBLE NOT NULL,
+  PRIMARY KEY (`orderID`),
+  UNIQUE INDEX `orderID_UNIQUE` (`orderID` ASC) VISIBLE);
+
+alter table orders
+ADD FOREIGN KEY(productID) REFERENCES products(productID);
+alter table orders
+ADD FOREIGN KEY(custID) REFERENCES customer(custID);
+
+INSERT INTO orders(productID, custID, productCategory, brandName, quantity, totalAmount)
+values('E8880', '1', 'Electronics', 'Asus', '10', '255000'),
+('E8879', '1', 'Electronics', 'Asus', '10', '255000');
+
+
+INSERT INTO orders(productID, custID, productCategory, brandName, quantity, totalAmount) values
+('productID','getCustomerData.customerID','productCategory','brandName','quantity','amount');
+
+alter table orders
+auto_increment = 1000;
+
+SELECT orders.orderID, orders.productID, orders.custID, orders.productCategory, orders.brandName, orders.quantity, orders.totalAmount from ORDERS INNER JOIN employee ON orders.productCategory = employee.sellerOF;
+
+
+alter table order
+add column employee;
+
+delete from orders where orderID = 5;
+
+select count(DISTINCT(custID)) from orders where productCategory = 'Electronics';
+
+select sum(totalAmount) from orders where productCategory = 'Electronics';
+
+select count(orderID) from orders where productCategory = 'Electronics';
+
+Select * FROM orders;

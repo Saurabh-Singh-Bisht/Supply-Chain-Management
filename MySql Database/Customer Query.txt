@@ -1,0 +1,25 @@
+create schema SupplyChainManagement;
+
+use supplychainmanagement;
+
+create table customer(
+	custID Int auto_increment primary key,
+    custNAME varchar(50) not null,
+    custEMAIL varchar(50) not null,
+    custPHONE int not null,
+    custADDRESS varchar(200) not null,
+    custPASSWORD varchar(300) not null
+);
+insert into customer(custName, custEMAIL, custPHONE, custADDRESS, custPASSWORD) values('Saurabh', 'singh.bisht750@gmail.com', '758990166', 'Shiv shakti enclave', '123456kd');
+select * from customer where custEMAIL = 'singh.bisht750@gmail.com' and custPASSWORD = '123456kd';
+desc customer;
+select * from customer;
+
+alter table customer
+add  unique custEMAIL 
+
+
+delete from customer where custID = 5;
+
+
+SELECT custID FROM customer WHERE custEmail = 'singh.bisht750@gmail.com';

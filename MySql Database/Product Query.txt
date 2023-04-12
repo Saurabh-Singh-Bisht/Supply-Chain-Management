@@ -1,0 +1,35 @@
+use SupplychainManagement
+
+create table products(
+	productID INT not null primary key unique,
+    productCategory VARCHAR(50) not null,
+    brandName VARCHAR(50) not null,
+    productName VARCHAR(100) not null,
+    productPrice DOUBLE not null,
+    productStatus VARCHAR(50) not null
+);
+
+alter table products
+ADD column employeeID int not null;
+
+
+alter table products
+Modify column productID varChar(16);
+
+alter table products
+drop column employeeID;
+
+
+insert into products(productID, productCategory, brandName, productName, productPrice, productStatus)
+values ('E99585', 'Electronics', 'Lenevo', 'Lenevo legion 5', '121000', 'Available');
+
+UPDATE products SET productCategory = 'Electronics', brandName = 'Lenevo', productName = 'Lenevo legion 5i', productPrice = '131000', productStatus = 'Available' WHERE productID = 'E99586';
+
+DELETE from products WHERE productID = 'E8880';
+
+select * from products;
+
+desc products;
+
+
+

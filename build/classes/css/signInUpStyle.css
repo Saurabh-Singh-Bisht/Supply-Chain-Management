@@ -1,0 +1,73 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25-Mar-2023, 4:00:21 pm
+    Author     : SSB
+*/
+.anchorPane{
+    -fx-background-color: #00649C;
+}
+.chooserBtn{
+    -fx-background-color: #388196;
+    -fx-background-radius: 0px;
+}
+.chooserBtn.button:hover{
+    -fx-background-color: transparent;
+    -fx-border-width: 3px;
+    -fx-background-radius: 0px;
+    -fx-border-color: #388196;
+}
+.rectangle{
+    -fx-background-color: white;
+    -fx-opacity: 0.9;
+    -fx-background-radius: 20px;
+}
+.textFeild{
+   -fx-background-color: transparent;
+   -fx-background-color: #F5F5F5;
+   -fx-padding: 0 0 0 40;
+   -fx-border-color: #388196;
+   -fx-border-width: 0px 0px 2px 0px;
+}
+.signInUpBtn{
+    -fx-background-color: #388196;
+    -fx-background-radius: 0px;
+}
+.signInUpBtn:hover{
+    -fx-background-color: transparent;
+    -fx-border-width: 3px;
+    -fx-background-radius: 0px;
+    -fx-border-color: #388196;
+    -fx-text-fill: #388196;
+}
+.dashboardLeftPane{
+    -fx-background-color: #388196;
+    -fx-background-radius: 20px;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.2), 10,0,5,5);
+}
+.neoWhiteShadow{
+    -fx-background-color: #388196;
+    -fx-background-radius: 20px;
+    -fx-effect:dropshadow(three-pass-box, rgba(255,255,255,0.2), 10,0,-5,-5);
+}
+.exitBtn{
+    -fx-background-color: transparent;
+}
+.exitImg{
+    -fx-opacity: 0.5;
+}
+.exitImg:hover{
+    -fx-opacity: 0.9;
+}
+toggle-button {
+  -fx-graphic: url('D:\Project\Java\NetBeans\Supply_Chain_Management\src\main\resources\images\exit.png');
+}
+.hyperlink{
+    -fx-border-color: transparent;
+    -fx-text-fill: #388196;
+}
+.hyperlink:hover{
+    -fx-text-fill: grey;
+}

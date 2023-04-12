@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SCM.jnlp">
+  <information>
+    <title>SCM</title>
+    <vendor>SSB</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SCM.jar" size="3768386" download="eager" />
+    <jar href="lib\javafx-swt.jar" size="37119" download="eager" />
+    <jar href="lib\javafx.base.jar" size="755034" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2577980" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="130174" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4272241" download="eager" />
+    <jar href="lib\javafx.media.jar" size="278548" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="89685" download="eager" />
+    <jar href="lib\javafx.web.jar" size="727747" download="eager" />
+    <jar href="lib\mysql-connector-j-8.0.32.jar" size="2480823" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="scm.App"  name="SCM" />
+  <update check="always"/>
+</jnlp>
